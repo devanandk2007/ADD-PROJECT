@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Quiz Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-app">
+    <header>
+      <h1>Online Quiz Application</h1>
+      <p>Test your knowledge with instant evaluation and scoring.</p>
+    </header>
+
+    <section class="status-bar">
+      <div class="score-box">Score: <span id="score">0</span></div>
+      <div class="timer-box">Time left: <span id="timer">60</span>s</div>
+      <div class="high-score">Highest Score: <span id="highScore">0</span></div>
+    </section>
+
+    <section class="question-card" id="questionCard">
+      <div class="question-header">
+        <span id="questionNumber">Question 1</span>
+        <h2 id="questionText">Loading question...</h2>
+      </div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+    </section>
+
+    <section class="controls">
+      <button id="nextButton" class="btn secondary" disabled>Next Question</button>
+      <button id="restartButton" class="btn primary">Restart Quiz</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
